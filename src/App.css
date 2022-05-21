@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+a{
+  text-decoration:none !important;
+  color: white !important;
+}
+a:hover{
+  opacity: 80%;
+}
+
+h4{
+  color: rgb(117, 117, 121);
+}
+
+.card-style{
+  border-radius: 35px;
+  background-color: #282c34;
+  color: white;
+  text-align: left;
+}
