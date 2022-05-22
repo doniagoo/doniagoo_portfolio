@@ -3,9 +3,16 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Inicio from "./components/Inicio";
+import About from "./components/About";
+import TimeLine from "./components/TimeLine";
+import Projects from "./components/Projects";
 import NavBar from "./components/navbar/NavBar";
-import Buscador from "./components/Buscador";
-import Otros from "./components/Otros";
+import SolveApp from "./components/SolveApp";
+import styles from './index.css';
+// import styles2 from './components/timeline.css';
+function setColor(color) {
+  document.documentElement.style.setProperty('--color-logo', color)
+}
 
 function App() {
   return (
@@ -13,9 +20,11 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
-          <Route path="/" exact component={Inicio}/>
-          <Route path="/buscador" component={Buscador}/>
-          <Route path="/otros" component={Otros}/>
+          <Route path="/" onClick={() => setColor('orange')} exact component={Inicio} activeClassName="nav-active"/>
+          <Route path="/about"  onClick={() => setColor('red')} component={About} activeClassName="nav-active"/>
+          <Route path="/timeline" component={TimeLine} activeClassName="nav-active"/>
+          <Route path="/projects" component={Projects} activeClassName="nav-active"/>
+          <Route path="/solve_app" component={SolveApp} activeClassName="nav-active"/>
         </Switch>
       </Router>
     </div>
