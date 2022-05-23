@@ -11,7 +11,7 @@ let character2 = require("../assets/img/character2.png");
 const TimeLine = () => {
   return (
     <>
-      <div className="container">
+      <div className="container" id="time">
         <div class="container-timeline">
           <div class="timeline">
             <ul>

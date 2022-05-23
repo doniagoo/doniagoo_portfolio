@@ -10,7 +10,7 @@ let character1 = require("../assets/img/character1.png");
 const Inicio = () => {
   return (
     <>
-      <div className="body-inicio m-5 d-flex justify-content-center gap-5">
+      <div className="body-inicio gap-5">
         <div className="text-left">
           <div className="text-name">
             <h5>IAGO DE OLIVEIRA</h5>
@@ -28,8 +28,8 @@ const Inicio = () => {
         <div className="image-character">
           <img className="character1" src={character1}></img>
           <div>
-            <button className="btn-action mx-1">
-              <Link to="/projects">
+            <Link to="/projects">
+              <button className="btn-action mx-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
@@ -48,10 +48,10 @@ const Inicio = () => {
                   />
                 </svg>{" "}
                 <b>Projects</b>
-              </Link>
-            </button>
-            <button className="btn-message">
-              <a href="mailto:bcniago@gmail.com">
+              </button>
+            </Link>
+            <a href="mailto:bcniago@gmail.com">
+              <button className="btn-message">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="25"
@@ -62,8 +62,8 @@ const Inicio = () => {
                 >
                   <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                 </svg>
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </div>
       </div>

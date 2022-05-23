@@ -13,14 +13,29 @@ body {
   background-color: #FFF9F0;
   
 }
+/* .timeline-root{
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+} */
 
 .body-inicio{
   margin-top: 5rem !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
 }
+
+
 .body-about{
   margin-top: 5rem !important;
-  margin-left: 14rem !important;
-  margin-right: 14rem !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
 }
 
 .navbar-main{
@@ -49,12 +64,39 @@ body {
   align-items: flex-start;
   justify-content: center;
 }
+.text-left-about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 40vw;
+  /* width: 50%; */
+}
 
 .image-character{
   background-image: url('../src/assets/img/bg-character1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media only screen and (max-width: 555px) {
+  .image-character {
+    width: 90%;
+  }
+
+  .character1 {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .text-left-about {
+    margin: 1rem;
+    width: 50%;
+  }
+
+  .character2 {
+    width: 90%;
+  }
 }
 .image-character2{
   
