@@ -3,15 +3,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import '../index.css';
+import "../index.css";
 
-let project1 = require("../assets/img/solve_app.png");
+let project1 = require("../assets/img/gadi_games.png");
 
-const SolveApp = () => {
+const GadiGames = () => {
   return (
     <>
       <div className="title-proj-comp">
-        <h1>SolveApp</h1>
+        <h1>GadiGames</h1>
       </div>
       <div className="container-main-projects">
         <div className="container-text">
@@ -36,11 +36,11 @@ const SolveApp = () => {
           </p>
         </div>
         <div className="container-img">
-        <img src={project1}></img>
+          <img src={project1}></img>
         </div>
       </div>
     </>
   );
 };
 
-export default SolveApp;
+export default GadiGames;

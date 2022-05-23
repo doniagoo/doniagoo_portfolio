@@ -8,6 +8,7 @@ import TimeLine from "./components/TimeLine";
 import Projects from "./components/Projects";
 import NavBar from "./components/navbar/NavBar";
 import SolveApp from "./components/SolveApp";
+import GadiGames from "./components/GadiGames";
 import styles from './index.css';
 // import styles2 from './components/timeline.css';
 function setColor(color) {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/timeline" component={TimeLine} activeClassName="nav-active"/>
           <Route path="/projects" component={Projects} activeClassName="nav-active"/>
           <Route path="/solve_app" component={SolveApp} activeClassName="nav-active"/>
+          <Route path="/gadi_games" component={GadiGames} activeClassName="nav-active"/>
         </Switch>
       </Router>
     </div>
