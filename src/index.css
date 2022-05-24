@@ -135,7 +135,7 @@ body {
   background-color: #5BC859;
   border: none;
   padding: 1rem;
-  /* color: #FFF9F0; */
+  color: #FFF9F0;
 }
 .btn-message a{
   color: #FFF9F0;
@@ -423,8 +423,13 @@ margin: 2.5rem;
   text-align: start;
 }
 .container-image {
+  /* width: 500px */
 }
 
 img{
-  width: 500px
+  /* width: 500px */
+}
+
+.ul-participantes li{
+  margin-top: 20px;
 }

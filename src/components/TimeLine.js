@@ -51,15 +51,7 @@ const TimeLine = () => {
                   </p>
                 </div>
               </li>
-              <li>
-                <div class="timeline-content">
-                  <h3 class="date">Actualidad</h3>
-                  <h1>???</h1>
-                  <p>
-                  Desconocido
-                  </p>
-                </div>
-              </li>
+              
             </ul>
           </div>
         </div>
