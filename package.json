@@ -1,6 +1,5 @@
 {
   "name": "doniagoo_portfolio",
-  "homepage": "http://doniagoo.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
