@@ -6,7 +6,9 @@ body {
   /* background-color: #FFF9F0; */
 }
 
-
+img{
+  pointer-events: none;
+}
 
 .main-body{
   color: #402D28;
@@ -432,4 +434,27 @@ img{
 
 .ul-participantes li{
   margin-top: 20px;
+}
+
+.btn-ver{
+  background-color: #5BC859;
+  border: none;
+  padding: 1rem;
+  color: #FFF9F0;
+}
+
+.nav-active{
+  background-color: red;
+  color: #FFF9F0;
+}
+
+button{
+  transition: all 0.2s ease-out;
+}
+button:hover{
+  transform: scale(1.05);
+  transition: all 0.4s ease-out;
+  background-color: #402D28;
+  color: #FFF9F0;
+  opacity: 100%;
 }

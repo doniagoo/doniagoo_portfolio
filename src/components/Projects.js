@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 // import SolveApp from "./SolveApp";
 import "bootstrap/dist/css/bootstrap.min.css";
+import AnimatedPage from "./AnimatedPage";
+// import { AnimatedPage } from "./AnimatedPage";
 
 let character1 = require("../assets/img/character1.png");
 let character2 = require("../assets/img/character2.png");
@@ -13,7 +15,7 @@ let gadi_games = require("../assets/img/gadi_games.png");
 
 const Projects = () => {
   return (
-    <>
+    <AnimatedPage>
       <div className="body-project">
         <h1 className="card-text-top">
           <b>Proyectos</b>
@@ -65,8 +67,7 @@ const Projects = () => {
             </article>
           </a>
         </div>
-      </div>
-    </>
+      </div></AnimatedPage>
   );
 };
 

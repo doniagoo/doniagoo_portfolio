@@ -5,6 +5,7 @@ import { Button } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../index.css';
 import SimpleImageSlider from "react-simple-image-slider";
+import AnimatedPage from "./AnimatedPage";
 
 let project1 = require("../assets/img/solve_app.png");
 let project2 = require("../assets/img/solve_app2.png");
@@ -27,7 +28,7 @@ const images = [
 ];
 const SolveApp = () => {
   return (
-    <>
+    <><AnimatedPage>
       <div className="title-proj-comp">
         <h1>
           <b>SolveApp</b>
@@ -194,7 +195,7 @@ const SolveApp = () => {
             showNavs={true}
           />
         </div>
-      </div>
+      </div></AnimatedPage>
     </>
   );
 };

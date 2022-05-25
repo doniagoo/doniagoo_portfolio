@@ -25,22 +25,22 @@ const NavBar = () => {
           <Nav className="m-auto gap-5" navbar>
             <NavItem>
               <NavLink className="navbar-link">
-                <Link to="/">Home</Link>
+                <Link to="/" activeClassName="nav-active">Home</Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink className="navbar-link">
-                <Link to="/about">About</Link>
+                <Link to="/about" activeClassName="nav-active">About</Link>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink className="navbar-link">
-                <Link to="/timeline">TimeLine</Link>
+                <Link to="/timeline" activeClassName="nav-active">TimeLine</Link>
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="navbar-link">
-                <Link to="/projects">Projects</Link>
+              <NavLink className="navbar-link" activeClassName="nav-active">
+                <Link to="/projects" activeClassName="nav-active">Projects</Link>
               </NavLink>
             </NavItem>
           </Nav>

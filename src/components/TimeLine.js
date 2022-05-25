@@ -3,14 +3,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import AnimatedPage from "./AnimatedPage";
 // import "./timeline.css";
+// import { AnimatedPage } from "./AnimatedPage";
 
 let character1 = require("../assets/img/character1.png");
 let character2 = require("../assets/img/character2.png");
 
 const TimeLine = () => {
   return (
-    <>
+    <AnimatedPage>
       <div className="container" id="time">
         <div class="container-timeline">
           <div class="timeline">
@@ -55,8 +57,7 @@ const TimeLine = () => {
             </ul>
           </div>
         </div>
-      </div>
-    </>
+      </div></AnimatedPage>
   );
 };
 

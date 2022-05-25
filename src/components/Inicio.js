@@ -4,12 +4,13 @@ import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import '../index.css';
+import AnimatedPage from "./AnimatedPage";
 
 let character1 = require("../assets/img/character1.png");
 
 const Inicio = () => {
   return (
-    <>
+    <AnimatedPage>
       <div className="body-inicio gap-5">
         <div className="text-left">
           <div className="text-name">
@@ -66,8 +67,7 @@ const Inicio = () => {
             </a>
           </div>
         </div>
-      </div>
-    </>
+      </div></AnimatedPage>
   );
 };
 

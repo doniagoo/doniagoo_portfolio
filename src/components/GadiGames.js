@@ -5,6 +5,7 @@ import { Button } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../index.css";
 import SimpleImageSlider from "react-simple-image-slider";
+import AnimatedPage from "./AnimatedPage";
 
 let project1 = require("../assets/img/gadi_games.png");
 let project2 = require("../assets/img/gadi_games2.png");
@@ -40,7 +41,7 @@ const images = [
 
 const GadiGames = () => {
   return (
-    <>
+    <><AnimatedPage>
       <div className="title-proj-comp">
         <h1>
           <b>Gadi Games</b>
@@ -256,7 +257,7 @@ const GadiGames = () => {
             showNavs={true}
           />
         </div>
-      </div>
+      </div></AnimatedPage>
     </>
   );
 };

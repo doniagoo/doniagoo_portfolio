@@ -3,14 +3,32 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import '../index.css';
+import "../index.css";
+import AnimatedPage from "./AnimatedPage";
+// import { AnimatedPage } from "./AnimatedPage";
 
 let character1 = require("../assets/img/character1.png");
 let character2 = require("../assets/img/character2.png");
 
+function verMas() {
+  var x = document.getElementById("text-read-more");
+  var y = document.getElementById("btn-read-more");
+  var z = document.getElementById("btn-read-less");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+    z.style.display = "block";
+  } else {
+    x.style.display = "none";
+    y.style.display = "block";
+    z.style.display = "none";
+  }
+}
+
 const About = () => {
+  
   return (
-    <>
+<AnimatedPage>
       <div className="body-about gap-5">
         <div className="text-left-about">
           <div className="text-title mb-5">
@@ -32,38 +50,45 @@ const About = () => {
             <br />
             <p>Mi nombre es Iago, bienvenid@ a mi portafolio.</p>
             <br />
-            <p>
-              Tengo formación en desarrollo de aplicaciones web y me encanta la
-              programacion web, sobre todo en el ámbito de Front End (área
-              encargada de enfocarse en Optimización de la experiencia del
-              usuario y el diseño de interfaces), en los cuales he logrado
-              obtener diferentes habilidades técnicas que implican lenguajes de
-              programación como JavaScript, HTML, CSS, PHP, MySql y frameworks
-              como Vue, React, Laravel y Bootstrap.
-            </p>
-            <br />
-            <p>
-              Soy una persona con gran flexibilidad y esto probablemente se deba
-              a que desde muy joven mis padres siempre se mudaban de país y eso
-              sin duda hace que te tengas que adaptarte en cualquier ambiente y
-              cultura por muy diferente que sea a la tuya. Por motivos como este
-              y muchos más, he crecido con altas capacidades de responsabilidad.
-              Un factor muy importante a la hora de diseñar es la creatividad y
-              el haber viajado mucho y vivido diferentes culturas desde tan
-              temprana edad hace que cuando piense en nuevas ideas tenga un
-              amplio abanico de opciones por delante de otros
-            </p>
-            <br />
-            <p>
-              Gracias a las prácticas del ciclo formativo de grado superior y a
-              que trabajé en Londres durante 1 año para aprender inglés, he
-              logrado alcanzar gran nivel de profesionalidad, compromiso, alta
-              capacidad de interlocución, trabajo bajo presión y en equipo.
-            </p>
-            <br />
-            <p>
-              Si quieres saber más sobre mí, sigue navegando por mi página web.{" "}
-            </p>
+            <button className="btn-ver btn-read-more" id="btn-read-more" onClick={verMas} > Ver Más </button>
+            <div id="text-read-more" style={{display: 'none'}}>
+                <p>
+                  Tengo formación en desarrollo de aplicaciones web y me encanta
+                  la programacion web, sobre todo en el ámbito de Front End
+                  (área encargada de enfocarse en Optimización de la experiencia
+                  del usuario y el diseño de interfaces), en los cuales he
+                  logrado obtener diferentes habilidades técnicas que implican
+                  lenguajes de programación como JavaScript, HTML, CSS, PHP,
+                  MySql y frameworks como Vue, React, Laravel y Bootstrap.
+                </p>
+                <br />
+                <p>
+                  Soy una persona con gran flexibilidad y esto probablemente se
+                  deba a que desde muy joven mis padres siempre se mudaban de
+                  país y eso sin duda hace que te tengas que adaptarte en
+                  cualquier ambiente y cultura por muy diferente que sea a la
+                  tuya. Por motivos como este y muchos más, he crecido con altas
+                  capacidades de responsabilidad. Un factor muy importante a la
+                  hora de diseñar es la creatividad y el haber viajado mucho y
+                  vivido diferentes culturas desde tan temprana edad hace que
+                  cuando piense en nuevas ideas tenga un amplio abanico de
+                  opciones por delante de otros
+                </p>
+                <br />
+                <p>
+                  Gracias a las prácticas del ciclo formativo de grado superior
+                  y a que trabajé en Londres durante 1 año para aprender inglés,
+                  he logrado alcanzar gran nivel de profesionalidad, compromiso,
+                  alta capacidad de interlocución, trabajo bajo presión y en
+                  equipo.
+                </p>
+                <br />
+                <p>
+                  Si quieres saber más sobre mí, sigue navegando por mi página
+                  web.{" "}
+                </p>
+              </div><br /><br />
+              <button style={{display: 'none'}} className="btn-ver btn-read-less mb-5" id="btn-read-less" onClick={verMas} > Ver Menos </button>
             <br />
           </div>
         </div>
@@ -91,8 +116,7 @@ const About = () => {
             </a>
           </div>
         </div>
-      </div>
-    </>
+      </div></AnimatedPage>
   );
 };
 

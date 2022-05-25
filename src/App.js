@@ -21,12 +21,12 @@ function App() {
       <Router>
         <NavBar />
         <Switch>
-          <Route path="/" onClick={() => setColor('orange')} exact component={Inicio} activeClassName="nav-active"/>
-          <Route path="/about"  onClick={() => setColor('red')} component={About} activeClassName="nav-active"/>
-          <Route path="/timeline" component={TimeLine} activeClassName="nav-active"/>
-          <Route path="/projects" component={Projects} activeClassName="nav-active"/>
-          <Route path="/solve_app" component={SolveApp} activeClassName="nav-active"/>
-          <Route path="/gadi_games" component={GadiGames} activeClassName="nav-active"/>
+          <Route path="/" onClick={() => setColor('orange')} exact component={Inicio}/>
+          <Route path="/about"  onClick={() => setColor('red')} component={About}/>
+          <Route path="/timeline" component={TimeLine}/>
+          <Route path="/projects" component={Projects}/>
+          <Route path="/solve_app" component={SolveApp}/>
+          <Route path="/gadi_games" component={GadiGames}/>
         </Switch>
       </Router>
     </div>
